@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //属性是否合法看属性名在没有引号的情况下是否是正常的字母拼接
+    //参考链接：https://blog.csdn.net/QingWaXieZi/article/details/103467700
+
+    // 如果对象属性名合法不管是不是字符串都可以直接.
+    const person = {
+        "name" : 'huang',
+    }
+    //均是合法
+    console.log(person.name,person[name]);
+
+    const fn = {
+        '1':"男",
+        "0":"女"
+    }
+    //正常打印
+    console.log(fn[1]);
+    //报错
+    // console.log(fn.1);
+</script>
+</html>
