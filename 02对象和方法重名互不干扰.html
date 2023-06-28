@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    function fn(){
+        console.log(1);
+    }
+    fn.person = {
+        name:"黄"
+    }
+    console.log(fn);
+    //打印函数
+    console.log(fn.person);
+    //打印对象
+
+
+    //但是如果是如下情况
+    fn = {
+        name:"huang "
+    }
+    //fn的指向发生改变，会指向对象，覆盖原来的函数
+</script>
+</html>
